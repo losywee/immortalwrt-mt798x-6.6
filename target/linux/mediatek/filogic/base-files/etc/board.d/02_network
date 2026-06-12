@@ -96,6 +96,9 @@ mediatek_setup_interfaces()
 	huasifei,wh3000-emmc)
 		ucidef_set_interfaces_lan_wan eth0 eth1
 		;;
+	honor,fur-602)
+		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" wan
+		;;
 	bananapi,bpi-r4|\
 	bananapi,bpi-r4-poe)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 eth1" "wan eth2"

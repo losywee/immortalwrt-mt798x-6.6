@@ -761,6 +761,7 @@ setup_model()
 	xiaomi,mi-router-ax3000t* |\
 	*rax3000m* |\
 	sl,3000-emmc|\
+	honor,fur-602 |\
 	h3c,nx30pro |\
 	konka,komi-a31 |\
 	*nokia,ea0326gmp* |\

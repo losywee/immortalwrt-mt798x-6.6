@@ -1206,6 +1206,26 @@ define Device/h3c_magic-nx30-pro-nmbm
 endef
 TARGET_DEVICES += h3c_magic-nx30-pro-nmbm
 
+define Device/honor_fur-602
+  DEVICE_VENDOR := HONOR
+  DEVICE_MODEL := FUR-602
+  DEVICE_ALT0_VENDOR := HONOR
+  DEVICE_ALT0_MODEL := FUR-603
+  DEVICE_DTS := mt7981b-honor-fur-602
+  DEVICE_DTS_DIR := ../dts
+  SUPPORTED_DEVICES += honor,fur-602
+  DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware
+  UBINIZE_OPTS := -E 5
+  BLOCKSIZE := 128k
+  PAGESIZE := 2048
+  IMAGE_SIZE := 116736k
+  KERNEL_IN_UBI := 1
+  IMAGES += factory.bin
+  IMAGE/factory.bin := append-ubi | check-size $$$$(IMAGE_SIZE)
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+endef
+TARGET_DEVICES += honor_fur-602
+
 define Device/huasifei_wh3000-pro
   DEVICE_VENDOR := Huasifei
   DEVICE_MODEL := WH3000 Pro
