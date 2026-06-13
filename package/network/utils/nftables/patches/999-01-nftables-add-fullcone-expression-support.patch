@@ -1,4 +1,4 @@
-From 58c89e8768711a959fdc6e953df3ea2254ff93c1 Mon Sep 17 00:00:00 2001
+From b6e3ad4c0bb845a05d73ef1be46ffb73517d1565 Mon Sep 17 00:00:00 2001
 From: Syrone Wong <wong.syrone@gmail.com>
 Date: Sat, 9 Apr 2022 00:38:51 +0800
 Subject: [PATCH] nftables: add fullcone expression support
